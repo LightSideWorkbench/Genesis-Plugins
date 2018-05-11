@@ -114,10 +114,17 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		checkboxes.add(TRACK_LOCAL);
 		selections.put(TRACK_LOCAL, true);
 
+		loadStopWords(punctuationFilename, stopwordsFilename);
+		panel = new BasicFeaturesPanel(this, checkboxes);
+	}
+	
+	public void loadStopWords(String punctuationFilename, String stopwordsFilename) {
 		try
 		{
 			BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(punctuationFilename), Charset.forName("UTF-8")));
 			String line;
+			punctuationMap.clear();
+			reversePunctuationMap.clear();
 			while ((line = in.readLine()) != null)
 			{
 				String[] split = line.split("\\s+");
@@ -129,6 +136,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 			}
 			in.close();
 			in = new BufferedReader(new InputStreamReader(new FileInputStream(stopwordsFilename), Charset.forName("UTF-8")));
+			stopWordsSet.clear();
 			while ((line = in.readLine()) != null)
 			{
 				stopWordsSet.add(line);
@@ -140,7 +148,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		{
 			e.printStackTrace();
 		}
-		panel = new BasicFeaturesPanel(this, checkboxes);
+		
 	}
 
 	public boolean getOption(String tag)
@@ -307,7 +315,6 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		String tokenString; //the string representation of a single unit (tag or token or pair) within an n-gram.
 		
 		double numericValue = selections.get(TAG_NORMALIZED) ? 1.0/tokens.size() :1.0;
-		
 		for (int i = -1; i < tokens.size(); i++)
 		{
 			//reset for new ngram starting at i

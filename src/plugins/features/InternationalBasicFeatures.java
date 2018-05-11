@@ -46,7 +46,7 @@ public class InternationalBasicFeatures extends BasicFeatures
 		wrapper.add(languageCombo, BorderLayout.NORTH);
 		wrapper.add(panel, BorderLayout.CENTER);
 
-		language = TokenizingToolLanguage.GERMAN;
+		language = TokenizingToolLanguage.CHINESE;
 		languageCombo.setSelectedItem(language);
 		
 		languageCombo.addActionListener(new ActionListener()
@@ -93,6 +93,7 @@ public class InternationalBasicFeatures extends BasicFeatures
 	{
 		super.configureFromSettings(settings);
 		language = TokenizingToolLanguage.valueOf(settings.get("tagger_language"));
+		this.loadStopWords(language.getTool().punctuationFilename(), language.getTool().stopwordsFilename());
 	}
 	
 	public String getOutputName()
