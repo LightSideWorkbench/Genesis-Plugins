@@ -15,6 +15,7 @@ import javax.swing.JPanel;
 import edu.cmu.side.util.AbstractTokenizingTool;
 import edu.cmu.side.util.GermanTokenizingTool;
 import edu.cmu.side.util.TokenizingToolLanguage;
+import edu.cmu.side.util.TokenizingTools;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.HasOffset;
 import edu.stanford.nlp.ling.HasTag;
@@ -47,6 +48,7 @@ public class InternationalBasicFeatures extends BasicFeatures
 		wrapper.add(panel, BorderLayout.CENTER);
 
 		language = TokenizingToolLanguage.CHINESE;
+		TokenizingTools.replaceFactory(language.getTool().createTokenizerFactory());
 		languageCombo.setSelectedItem(language);
 		
 		languageCombo.addActionListener(new ActionListener()
@@ -55,6 +57,7 @@ public class InternationalBasicFeatures extends BasicFeatures
 			public void actionPerformed(ActionEvent e)
 			{
 				language = (TokenizingToolLanguage) languageCombo.getSelectedItem();
+				TokenizingTools.replaceFactory(language.getTool().createTokenizerFactory());
 			}
 		});
 
