@@ -122,7 +122,7 @@ public class ParseFeatures extends FeaturePlugin
 
 						for (TypedDependency dependency : tdl)
 						{
-							String dep = dependency.reln() + "(" + dependency.gov().toString() + " " + dependency.dep().toString() + ")";
+							String dep = dependency.reln() + "(" + dependency.gov().nodeString() + " " + dependency.dep().nodeString() + ")";
 							rules.add(dep);
 //							System.out.println(dep);
 						}
@@ -229,7 +229,7 @@ public class ParseFeatures extends FeaturePlugin
 	@Override
 	public String toString()
 	{
-		return "English Parse Features";
+		return "Parse Features";
 	}
 
 	/**

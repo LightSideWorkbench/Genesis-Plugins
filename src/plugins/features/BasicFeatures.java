@@ -20,7 +20,6 @@ import edu.cmu.side.model.feature.Feature;
 import edu.cmu.side.model.feature.FeatureHit;
 import edu.cmu.side.model.feature.LocalFeatureHit;
 import edu.cmu.side.plugin.ParallelFeaturePlugin;
-import edu.cmu.side.util.TokenizingToolLanguage;
 import edu.cmu.side.util.TokenizingTools;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.HasOffset;
@@ -74,8 +73,8 @@ public class BasicFeatures extends ParallelFeaturePlugin
 	protected Map<String, String> reversePunctuationMap = new TreeMap<String, String>();
 	protected Set<String> stopWordsSet = new TreeSet<String>();
 
-	protected String stopwordsFilename = null;//"toolkits/english.stp";
-	protected String punctuationFilename = null; //"toolkits/punctuation.stp";
+	protected static final String stopwordsFilename = "toolkits/english.stp";
+	protected static final String punctuationFilename = "toolkits/punctuation.stp";
 	/**
 	 * for memory management, it may be desirable to save a few bytes by leaving out the location information
 	 */
@@ -115,22 +114,10 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		checkboxes.add(TRACK_LOCAL);
 		selections.put(TRACK_LOCAL, true);
 
-		loadStopWords(TokenizingTools.getPunctuationFilename(), TokenizingTools.getStopwordsFilename());
-		panel = new BasicFeaturesPanel(this, checkboxes);
-	}
-	
-	public void loadStopWords(String punctuationFilename, String stopwordsFilename) {
-		if (this.stopwordsFilename != null && this.stopwordsFilename.equals(stopwordsFilename)) {
-			return;
-		}
-		this.stopwordsFilename = stopwordsFilename;
-		this.punctuationFilename = punctuationFilename;
 		try
 		{
 			BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(punctuationFilename), Charset.forName("UTF-8")));
 			String line;
-			punctuationMap.clear();
-			reversePunctuationMap.clear();
 			while ((line = in.readLine()) != null)
 			{
 				String[] split = line.split("\\s+");
@@ -142,7 +129,6 @@ public class BasicFeatures extends ParallelFeaturePlugin
 			}
 			in.close();
 			in = new BufferedReader(new InputStreamReader(new FileInputStream(stopwordsFilename), Charset.forName("UTF-8")));
-			stopWordsSet.clear();
 			while ((line = in.readLine()) != null)
 			{
 				stopWordsSet.add(line);
@@ -154,7 +140,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		{
 			e.printStackTrace();
 		}
-		
+		panel = new BasicFeaturesPanel(this, checkboxes);
 	}
 
 	public boolean getOption(String tag)
@@ -218,10 +204,9 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		boolean punct = selections.get(TAG_PUNCT);
 		boolean local = selections.get(TRACK_LOCAL);
 
-		loadStopWords(TokenizingTools.getPunctuationFilename(), TokenizingTools.getStopwordsFilename());
 		List<T> tokens = tokenize(text, selections.get(TAG_POS_BIGRAM) || selections.get(TAG_POS_TRIGRAM) || selections.get(TAG_WORD_POS_PAIR));
 		
-		
+
 		if(tokens.isEmpty())
 		{
 			logger.warning("Document "+(docID+1)+" has a blank text field in column "+column);
@@ -322,6 +307,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		String tokenString; //the string representation of a single unit (tag or token or pair) within an n-gram.
 		
 		double numericValue = selections.get(TAG_NORMALIZED) ? 1.0/tokens.size() :1.0;
+		
 		for (int i = -1; i < tokens.size(); i++)
 		{
 			//reset for new ngram starting at i
@@ -356,8 +342,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 					isPunct[added] = false;
 				}
 				
-				// TODO: Introduce stemmers for other languages; for now just ignore this option
-				if(stem && !isPunct[added] && type== NGramType.TOKENS && TokenizingTools.getLanguage() == TokenizingToolLanguage.ENGLISH)
+				if(stem && !isPunct[added] && type== NGramType.TOKENS)
 				{
 					word = EnglishStemmer.stem(word);
 				}
@@ -585,7 +570,6 @@ public class BasicFeatures extends ParallelFeaturePlugin
 			// }
 			// }
 		}
-		
 	}
 
 	@Override
@@ -599,8 +583,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 	{
 		Map<String, List<String>> text = documents.getCoveredTextList();
 		Collection<FeatureHit> hits = new TreeSet<FeatureHit>();
-		loadStopWords(TokenizingTools.getPunctuationFilename(), TokenizingTools.getStopwordsFilename());
-		
+	
 
 		Map<Feature, FeatureHit> localHitCache = new HashMap<Feature, FeatureHit>();
 		for (String col : text.keySet())
