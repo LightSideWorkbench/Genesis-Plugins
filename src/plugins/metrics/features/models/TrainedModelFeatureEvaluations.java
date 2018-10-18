@@ -386,7 +386,7 @@ public class TrainedModelFeatureEvaluations extends ModelFeatureMetricPlugin<Dou
 					double weight;
 
 					//capture nominal expansions
-					if(liner.getConvertNominalToBinary() && feature.getFeatureType() == Type.NOMINAL && feature.getNominalValues().size() > 2)
+					if(feature.getFeatureType() == Type.NOMINAL && feature.getNominalValues().size() > 2)
 					{
 						Collection<String> values = feature.getNominalValues();
 						for(String value : values)

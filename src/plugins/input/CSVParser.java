@@ -47,6 +47,12 @@ public class CSVParser extends FileParser {
 				f = new File(Workbench.dataFolder.getAbsolutePath(), filename.substring(Math.max(filename.lastIndexOf("/"), filename.lastIndexOf("\\"))+1));
 			in = new CSVReader(new InputStreamReader(new FileInputStream(f), encoding));//new FileReader(f));
 			String[] headers = in.readNextMeaningful();
+			
+			// If the input file has a unicode BOM mark, simply remove it from the first header name
+			if (headers[0].startsWith("\ufeff")) {
+				headers[0] = headers[0].substring(1);
+			}
+			
 			List<Integer> annotationColumns = new ArrayList<Integer>();
 			for(int i = 0; i < headers.length; i++){
 				headers[i] = headers[i].trim();
