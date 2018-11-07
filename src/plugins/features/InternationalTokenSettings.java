@@ -67,7 +67,7 @@ public class InternationalTokenSettings extends ParallelFeaturePlugin
 		});
 
 	}
-
+	
 	@Override
 	protected Component getConfigurationUIForSubclass()
 	{
