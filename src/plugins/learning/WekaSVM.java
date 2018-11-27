@@ -157,7 +157,6 @@ public class WekaSVM extends WekaCore{
 			classifier = new LibLINEAR();
 			LibLINEAR linear = (LibLINEAR) classifier;
 			linear.setSVMType(new SelectedTag(1, LibLINEAR.TAGS_SVMTYPE));
-			linear.setConvertNominalToBinary(true);
 			if(settings.containsKey("normalize"))
 			{
 				linear.setNormalize(true);

@@ -1,5 +1,6 @@
 package plugins.learning;
 
+import java.util.Enumeration;
 import java.util.Map;
 
 
@@ -80,7 +81,13 @@ public class WekaLogit extends WekaCore{
 
 		String reg = settings.get("reg");
 		LibLINEAR linear = (LibLINEAR) classifier;
-		linear.setConvertNominalToBinary(true);
+		try {
+			linear.setOptions(new String[] {"convertNominalToBinary"});
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//linear.setConvertNominalToBinary(true);
 		if (reg.equals("l2"))
 		{
 			linear.setSVMType(new SelectedTag(0, LibLINEAR.TAGS_SVMTYPE));
