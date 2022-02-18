@@ -4,8 +4,8 @@
     <property name="lightside.location" value="../lightside"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
+    <property name="target" value="11"/>
+    <property name="source" value="11"/>
 	
     <path id="junit.classpath">
     </path>
@@ -71,7 +71,7 @@
         	      <exclude name="**/AllTests.java"/>
         	    </fileset>
         	  </batchtest>
-            <jvmarg line="-Xmx4G -XX:+UseConcMarkSweepGC -Djava.awt.headless=true"/>
+            <jvmarg line="-Xmx4G -Djava.awt.headless=true"/>
 
 
         </junit>
