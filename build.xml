@@ -71,7 +71,7 @@
         	      <exclude name="**/AllTests.java"/>
         	    </fileset>
         	  </batchtest>
-            <jvmarg line="-Xmx4G -XX:+UseConcMarkSweepGC -Djava.awt.headless=true"/>
+            <jvmarg line="-Xmx4G -Djava.awt.headless=true"/>
 
 
         </junit>
