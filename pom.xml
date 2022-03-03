@@ -19,7 +19,7 @@
   <repositories>
 	<repository>
 	  <id>LightSide-repo</id>
-	  <url>file:///${project.basedir}/../LightSide/target/LightSideJars</url>
+	  <url>file:///${project.basedir}/../LightSide/maven-local-repository</url>
 	</repository>
 	<repository>
 	  <id>maven-local-repository</id>
