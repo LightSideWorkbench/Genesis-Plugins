@@ -114,4 +114,25 @@
       <version>2.21</version>
     </dependency>
   </dependencies>
+
+	<build>
+	  <plugins>
+	  	<plugin>
+	  	  <groupId>org.apache.maven.plugins</groupId>
+	  	  <artifactId>maven-jar-plugin</artifactId>
+	  	  <version>3.2.0</version>
+	  	  <executions>
+			<execution>
+			  <goals>
+				<goal>test-jar</goal>
+			  </goals>
+			</execution>
+	  	  </executions>
+	  	  <configuration>
+		    <finalName>../../LightSide/maven-local-repository/genesis</finalName>
+	  	  </configuration>
+	  	</plugin>	
+	  </plugins>
+	</build>  
+	
 </project>
