@@ -129,7 +129,7 @@
 			</execution>
 	  	  </executions>
 	  	  <configuration>
-		    <finalName>../../LightSide/maven-local-repository/genesis</finalName>
+		    <finalName>../../LightSide/plugins/genesis</finalName>
 	  	  </configuration>
 	  	</plugin>	
 	  </plugins>
