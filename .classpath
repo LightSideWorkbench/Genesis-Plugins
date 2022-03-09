@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="tests"/>
 	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Eclipse Temurin 8 [1.8.0_322]"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/LightSide"/>
 	<classpathentry kind="lib" path="/LightSide/dependencies/AbstractClassifierTest-3.7.11.jar"/>
 	<classpathentry kind="lib" path="/LightSide/dependencies/antlr-2.7.7.jar"/>
@@ -101,5 +100,6 @@
 	<classpathentry kind="lib" path="/LightSide/dependencies/xstream-1.4.19.jar"/>
 	<classpathentry kind="lib" path="/LightSide/dependencies/xstream-hibernate-1.4.19.jar"/>
 	<classpathentry kind="lib" path="/LightSide/dependencies/yeritools-min-1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
