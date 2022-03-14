@@ -123,6 +123,7 @@
 
 	<build>
 	  <plugins>
+	  
 	  	<plugin>
 	  	  <groupId>org.apache.maven.plugins</groupId>
 	  	  <artifactId>maven-jar-plugin</artifactId>
@@ -138,6 +139,32 @@
 		    <finalName>../../LightSide/plugins/genesis</finalName>
 	  	  </configuration>
 	  	</plugin>	
+	  	
+	  <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-enforcer-plugin</artifactId>
+		<version>1.4.1</version>
+		<executions>
+		  <execution>
+			<goals>
+			  <goal>enforce</goal>
+			</goals>
+			<configuration>
+			  <rules>
+				<bannedDependencies>
+				  <excludes>
+					<exclude>javax.xml.parsers:jaxp-api</exclude>
+				  </excludes>
+				  <excludes>
+					<exclude>org.w3c:dom</exclude>
+				  </excludes>
+				</bannedDependencies>
+			  </rules>
+			</configuration>
+		  </execution>
+		</executions>
+	  </plugin>	  	
+	  	
 	  </plugins>
 	</build>  
 	
