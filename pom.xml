@@ -36,6 +36,12 @@
   
   
   <dependencies>
+	<dependency>
+	  <groupId>javax.xml.parsers</groupId>
+	  <artifactId>jaxp-api</artifactId>
+	  <version>1.4.5</version>
+	  <scope>provided</scope>
+	</dependency>
     <dependency>
 	  <groupId>edu.stanford.nlp</groupId>
 	  <artifactId>stanford-parser</artifactId>
