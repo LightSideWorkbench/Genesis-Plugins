@@ -46,26 +46,76 @@
 	  <groupId>edu.stanford.nlp</groupId>
 	  <artifactId>stanford-parser</artifactId>
 	  <version>3.9.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
 	  <groupId>edu.stanford.nlp</groupId>
 	  <artifactId>stanford-corenlp</artifactId>
 	  <version>3.9.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 	<dependency>
 	  <groupId>se.datadosen.riverlayout</groupId>
 	  <artifactId>riverlayout</artifactId>
 	  <version>1.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
 	</dependency>
     <dependency>
       <groupId>com.oracle.database.xml</groupId>
       <artifactId>xmlparserv2</artifactId>
       <version>21.5.0.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-math3</artifactId>
       <version>3.6.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 <!-->
     <dependency>
@@ -78,46 +128,136 @@
       <groupId>org.simpleframework</groupId>
       <artifactId>simple-http</artifactId>
       <version>6.0.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.simpleframework</groupId>
       <artifactId>simple</artifactId>
       <version>5.1.6</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.simpleframework</groupId>
       <artifactId>simple-transport</artifactId>
       <version>6.0.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.side</groupId>
       <artifactId>LightSide</artifactId>
       <version>1.0-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 	<dependency>
 	  <groupId>nz.ac.waikato.cms.weka</groupId>
 	  <artifactId>weka-stable</artifactId>
 	  <version>3.8.6</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
 	  <groupId>com.yeriho.yeritools</groupId>
 	  <artifactId>yeritools-min</artifactId>
 	  <version>1.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
 	  <groupId>org.hamcrest</groupId>
 	  <artifactId>hamcrest-core</artifactId>
 	  <version>2.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>de.bwaldvogel</groupId>
       <artifactId>liblinear</artifactId>
       <version>2.21</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.xml.parsers</groupId>
+          <artifactId>jaxp-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.w3c</groupId>
+          <artifactId>dom</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
