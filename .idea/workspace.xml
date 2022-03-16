@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31b86ffd-1794-4e4b-b17b-7c65fe71f8d6" name="Changes" comment="" />
+    <list default="true" id="31b86ffd-1794-4e4b-b17b-7c65fe71f8d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/genesis_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/genesis_jar.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
