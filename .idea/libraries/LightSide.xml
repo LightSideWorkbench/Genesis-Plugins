@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LightSide">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../LightSide/LightSide.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

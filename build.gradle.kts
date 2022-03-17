@@ -7,14 +7,29 @@ plugins {
     `maven-publish`
 }
 
-repositories {
-    mavenLocal()
-    maven {
-        url = uri("file:////Users/rcmurray/git/LightSideWorkBench/Genesis-Plugins/../LightSide/maven-local-repository")
-    }
-
+/*
     maven {
         url = uri("file:////Users/rcmurray/git/LightSideWorkBench/Genesis-Plugins/maven-local-repository")
+    }
+*/
+
+
+repositories {
+
+    flatDir {
+        dirs("../LightSide/")
+    }
+
+    flatDir {
+        dirs("maven-local-repository/")
+    }
+
+    flatDir {
+        dirs("../LightSide/maven-local-repository/")
+    }
+
+    flatDir {
+        dirs("libs")
     }
 
     maven {
@@ -35,9 +50,11 @@ dependencies {
     implementation("org.simpleframework:simple-http:6.0.1")
     implementation("org.simpleframework:simple:5.1.6")
     implementation("org.simpleframework:simple-transport:6.0.1")
-    implementation("edu.cmu.side:LightSide:1.0-SNAPSHOT")
+/*    implementation("edu.cmu.side:LightSide:1.0-SNAPSHOT") */
+    implementation(":LightSide")
     implementation("nz.ac.waikato.cms.weka:weka-stable:3.8.6")
-    implementation("com.yeriho.yeritools:yeritools-min:1.0")
+/*    implementation("com.yeriho.yeritools:yeritools-min:1.0")  */
+    implementation(":yeritools-min-1.0")
     implementation("org.hamcrest:hamcrest-core:2.2")
     implementation("junit:junit:4.13.2")
     implementation("de.bwaldvogel:liblinear:2.21")
@@ -60,6 +77,6 @@ publishing {
     }
 }
 
-tasks.withType<JavaCompile>() {
+tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
 }
