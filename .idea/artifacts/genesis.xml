@@ -1,12 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="genesis:jar">
+  <artifact type="jar" name="genesis">
     <output-path>$PROJECT_DIR$/../LightSide/plugins</output-path>
-    <properties id="ant-preprocessing">
-      <options enabled="true" />
-    </properties>
     <root id="archive" name="genesis.jar">
       <element id="module-output" name="Genesis-Plugins.main" />
-      <element id="library" level="project" name="Gradle: com.yeriho.yeritools:yeritools-min:1.0" />
     </root>
   </artifact>
 </component>
