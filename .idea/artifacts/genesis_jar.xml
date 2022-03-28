@@ -7,6 +7,7 @@
     <root id="archive" name="genesis.jar">
       <element id="module-output" name="Genesis-Plugins.main" />
       <element id="library" level="project" name="Gradle: com.yeriho.yeritools:yeritools-min:1.0" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.ac.waikato.cms.weka/chiSquaredAttributeEval/1.0.4/9e834fe17f6fe9a63d332a44fde02f20adbb9ccd/chiSquaredAttributeEval-1.0.4.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

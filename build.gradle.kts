@@ -52,7 +52,9 @@ dependencies {
     implementation("org.simpleframework:simple-transport:6.0.1")
 /*    implementation("edu.cmu.side:LightSide:1.0-SNAPSHOT") */
     implementation(":LightSide")
-    implementation("nz.ac.waikato.cms.weka:weka-stable:3.8.6")
+    implementation("nz.ac.waikato.cms.weka:weka-dev:3.9.6")
+/*        implementation("nz.ac.waikato.cms.weka:chiSquaredAttributeEval:1.0.4")  */
+    implementation(":chiSquaredAttributeEval-1.0.4")
 /*    implementation("com.yeriho.yeritools:yeritools-min:1.0")  */
     implementation(":yeritools-min-1.0")
     implementation("org.hamcrest:hamcrest-core:2.2")
