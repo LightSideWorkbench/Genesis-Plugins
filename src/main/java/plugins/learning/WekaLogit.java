@@ -81,12 +81,12 @@ public class WekaLogit extends WekaCore{
 
 		String reg = settings.get("reg");
 		LibLINEAR linear = (LibLINEAR) classifier;
-		try {
-			linear.setOptions(new String[] {"convertNominalToBinary"});
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			linear.setOptions(new String[] {"convertNominalToBinary"});
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		//linear.setConvertNominalToBinary(true);
 		if (reg.equals("l2"))
 		{
