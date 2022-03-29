@@ -10,20 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="930dd9c9-b7b4-452d-935b-4f62cb8f5b71" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/1.0/yeritools-min-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/1.0/yeritools-min-1.0.jar.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/1.0/yeritools-min-1.0.jar.sha1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/1.0/yeritools-min-1.0.pom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/1.0/yeritools-min-1.0.pom.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/1.0/yeritools-min-1.0.pom.sha1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/maven-metadata.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/maven-metadata.xml.md5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/com/yeriho/yeritools/yeritools-min/maven-metadata.xml.sha1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-local-repository/yeritools-min.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
