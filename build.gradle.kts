@@ -7,25 +7,10 @@ plugins {
     `maven-publish`
 }
 
-/*
-    maven {
-        url = uri("file:////Users/rcmurray/git/LightSideWorkBench/Genesis-Plugins/maven-local-repository")
-    }
-*/
-
-
 repositories {
 
     flatDir {
         dirs("../LightSide/")
-    }
-
-    flatDir {
-        dirs("maven-local-repository/")
-    }
-
-    flatDir {
-        dirs("../LightSide/maven-local-repository/")
     }
 
     flatDir {
@@ -50,10 +35,8 @@ dependencies {
     implementation("org.simpleframework:simple-http:6.0.1")
     implementation("org.simpleframework:simple:5.1.6")
     implementation("org.simpleframework:simple-transport:6.0.1")
-/*    implementation("edu.cmu.side:LightSide:1.0-SNAPSHOT") */
     implementation(":LightSide")
     implementation("nz.ac.waikato.cms.weka:weka-dev:3.9.6")
-/*    implementation("com.yeriho.yeritools:yeritools-min:1.0")  */
     implementation(":yeritools-min-1.0")
     implementation("org.hamcrest:hamcrest-core:2.2")
     implementation("junit:junit:4.13.2")
