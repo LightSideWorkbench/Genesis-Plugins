@@ -44,7 +44,7 @@ dependencies {
 group = "edu.cmu.side"
 version = "1.0-SNAPSHOT"
 description = "Genesis-Plugins"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 val testsJar by tasks.registering(Jar::class) {
     archiveClassifier.set("tests")
