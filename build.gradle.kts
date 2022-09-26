@@ -26,7 +26,7 @@ repositories {
 
 dependencies {
     implementation("edu.stanford.nlp:stanford-parser:3.9.2")
-    implementation("edu.stanford.nlp:stanford-corenlp:3.9.2")
+    implementation("edu.stanford.nlp:stanford-corenlp:4.4.0")
     implementation("se.datadosen.riverlayout:riverlayout:1.1")
     implementation("com.oracle.database.xml:xmlparserv2:21.5.0.0")
     implementation("org.apache.commons:commons-math3:3.6.1")
@@ -44,7 +44,7 @@ dependencies {
 group = "edu.cmu.side"
 version = "1.0-SNAPSHOT"
 description = "Genesis-Plugins"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 val testsJar by tasks.registering(Jar::class) {
     archiveClassifier.set("tests")
