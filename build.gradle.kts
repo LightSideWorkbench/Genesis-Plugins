@@ -51,6 +51,19 @@ val testsJar by tasks.registering(Jar::class) {
     from(sourceSets["test"].output)
 }
 
+tasks.test {
+    useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
+}
+
+tasks.withType<JavaCompile> {
+    options.compilerArgs.addAll(arrayOf(
+        "--add-exports", "java.base/java.util=ALL-UNNAMED"
+    ))
+}
+
 publishing {
     publications.create<MavenPublication>("maven") {
         from(components["java"])
