@@ -76,7 +76,7 @@ public class FeatureSelectionPluginTest
 	@Test
 	public void testFeatureSelectionNominal() throws Exception
 	{
-		 Recipe wholeRecipe = ConverterControl.readFromXML("testData/test.model.side.xml");
+		 Recipe wholeRecipe = ConverterControl.readFromXML("../../Lightside/lib/testData/test.model.side.xml");
 		 
 		 selector.configureFromSettings(settings);
 		 selector.learnFromTrainingData(wholeRecipe.getTrainingTable(), 0, new DefaultMap<Integer, Integer>(1), updater);
@@ -88,7 +88,7 @@ public class FeatureSelectionPluginTest
 	@Test
 	public void testFeatureSelectionNumeric() throws Exception
 	{
-		 Recipe wholeRecipe = ConverterControl.readFromXML("testData/test.numeric.model.side.xml");
+		 Recipe wholeRecipe = ConverterControl.readFromXML("../../Lightside/lib/testData/test.numeric.model.side.xml");
 		 
 		 selector.configureFromSettings(settings);
 		 selector.learnFromTrainingData(wholeRecipe.getTrainingTable(), 0, new DefaultMap<Integer, Integer>(1), updater);
