@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: nz.ac.waikato.cms.weka:weka-dev:3.9.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.ac.waikato.cms.weka/weka-dev/3.9.6/153998d3f2d5f6cd0ef7a9207f2761a94007ce25/weka-dev-3.9.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.ac.waikato.cms.weka/weka-dev/3.9.6/96536b155a9795c8b9bdcc204201482e655d9100/weka-dev-3.9.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

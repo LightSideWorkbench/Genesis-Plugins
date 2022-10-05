@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: nz.ac.waikato.cms.weka:LibSVM:1.0.10">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.ac.waikato.cms.weka/LibSVM/1.0.10/65acc777ee5a3b53ac6c2f54ee1ec18a46610e1a/LibSVM-1.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.ac.waikato.cms.weka/LibSVM/1.0.10/4508e22c74464e403a1035c1bef6e6f6a7509fea/LibSVM-1.0.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

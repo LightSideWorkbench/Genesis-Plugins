@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.simpleframework:simple-transport:6.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-transport/6.0.1/663a8edd03af449baf9a1073dd143ed594e982f4/simple-transport-6.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-transport/6.0.1/a8ab280d959da3a1ce2e0daf5ff08e3bef9a0ba/simple-transport-6.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

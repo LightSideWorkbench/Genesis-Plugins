@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.oracle.database.xml:xmlparserv2:21.5.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oracle.database.xml/xmlparserv2/21.5.0.0/5cef860ff46da98cec070adc045fea5a75a2adc6/xmlparserv2-21.5.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.oracle.database.xml/xmlparserv2/21.5.0.0/bc15f00ebacbeb0669f0ed925917c177912db7af/xmlparserv2-21.5.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

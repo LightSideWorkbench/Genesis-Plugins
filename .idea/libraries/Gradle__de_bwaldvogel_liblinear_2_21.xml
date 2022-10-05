@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: de.bwaldvogel:liblinear:2.21">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.bwaldvogel/liblinear/2.21/8253fee70879e573789096e12e82aebf4b4c3137/liblinear-2.21.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.bwaldvogel/liblinear/2.21/da7264bf6c510d936e0858ad99dbc442fea42973/liblinear-2.21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

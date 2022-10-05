@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.simpleframework:simple:5.1.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple/5.1.6/b23ec14b268634967f00e3c137f82d3623adb323/simple-5.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple/5.1.6/c2ea4f2a8b3774332ecc915d13a4b2bae26e8fc9/simple-5.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

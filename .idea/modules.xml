@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Genesis-Plugins.iml" filepath="$PROJECT_DIR$/.idea/modules/Genesis-Plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.test.iml" />
+    </modules>
+  </component>
+</project>

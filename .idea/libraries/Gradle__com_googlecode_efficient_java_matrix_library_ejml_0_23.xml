@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.googlecode.efficient-java-matrix-library:ejml:0.23">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.efficient-java-matrix-library/ejml/0.23/fb9a880674f0d241d727ee2bc5e6a839d3007fe8/ejml-0.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.efficient-java-matrix-library/ejml/0.23/a23859099f20008b97285adc8aed51d3d6afc89f/ejml-0.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

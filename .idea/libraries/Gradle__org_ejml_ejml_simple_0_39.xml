@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.ejml:ejml-simple:0.39">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-simple/0.39/e355bf277f877ba8eefd3947b9c246fdf921d21b/ejml-simple-0.39.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-simple/0.39/fbec772f501bf759cbc665d97f7fdf069dd7a6fc/ejml-simple-0.39-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

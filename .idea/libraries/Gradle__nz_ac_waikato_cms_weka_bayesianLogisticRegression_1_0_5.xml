@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: nz.ac.waikato.cms.weka:bayesianLogisticRegression:1.0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.ac.waikato.cms.weka/bayesianLogisticRegression/1.0.5/e49d44977507361c480f87ce1d28d7f372a4ec94/bayesianLogisticRegression-1.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nz.ac.waikato.cms.weka/bayesianLogisticRegression/1.0.5/1a5ba42410398c0813ba0d24d537458816c318f8/bayesianLogisticRegression-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

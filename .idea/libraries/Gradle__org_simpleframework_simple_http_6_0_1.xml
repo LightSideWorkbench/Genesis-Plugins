@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.simpleframework:simple-http:6.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-http/6.0.1/5c4b2fa8c8b2d020c572ee6d4121f82d24005b0/simple-http-6.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple-http/6.0.1/22bf7b8eb0cf76e41e5299a8c35f094a03e67443/simple-http-6.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

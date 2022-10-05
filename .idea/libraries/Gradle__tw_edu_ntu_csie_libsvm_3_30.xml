@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: tw.edu.ntu.csie:libsvm:3.30">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tw.edu.ntu.csie/libsvm/3.30/d94758193809e71ae684a2cf080d81a37db4d256/libsvm-3.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tw.edu.ntu.csie/libsvm/3.30/ea0f4e173b80ffefc179de2e33327758a36e7b66/libsvm-3.30-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
