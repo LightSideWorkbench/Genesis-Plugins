@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":lib:main" external.linked.project.path="$MODULE_DIR$/../../../lib" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Genesis-Plugins" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":lib:main" external.linked.project.path="$MODULE_DIR$/../../../lib" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Genesis-Plugins" external.system.module.type="sourceSet" external.system.module.version="1.2.1" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../lib/build/classes/java/main" />
     <exclude-output />
@@ -17,16 +17,18 @@
     <orderEntry type="library" name="Gradle: org.simpleframework:simple-http:6.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.simpleframework:simple:5.1.6" level="project" />
     <orderEntry type="library" name="Gradle: org.simpleframework:simple-transport:6.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:weka-stable:3.8.6" level="project" />
     <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:bayesianLogisticRegression:1.0.5" level="project" />
-    <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:LibSVM:1.0.10" level="project" />
     <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:LibLINEAR:1.9.7" level="project" />
     <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:chiSquaredAttributeEval:1.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:weka-dev:3.9.6" level="project" />
     <orderEntry type="library" name="Gradle: :yeritools-min-1.0:" level="project" />
+    <orderEntry type="library" name="Gradle: :libsvm:" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.13.2" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:2.2" level="project" />
     <orderEntry type="library" name="Gradle: de.bwaldvogel:liblinear:2.21" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:31.0.1-jre" level="project" />
+    <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:LibSVM:1.0.10" level="project" />
+    <orderEntry type="library" name="Gradle: tw.edu.ntu.csie:libsvm:3.31" level="project" />
     <orderEntry type="library" name="Gradle: :LightSide:" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.efficient-java-matrix-library:ejml:0.23" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.12" level="project" />
@@ -49,7 +51,6 @@
     <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-core:2.3.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-impl:2.4.0-b180830.0438" level="project" />
     <orderEntry type="library" name="Gradle: org.simpleframework:simple-common:6.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: tw.edu.ntu.csie:libsvm:3.30" level="project" />
     <orderEntry type="library" name="Gradle: com.github.vbmacher:java-cup:11b-20160615" level="project" />
     <orderEntry type="library" name="Gradle: com.github.vbmacher:java-cup-runtime:11b-20160615" level="project" />
     <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka.thirdparty:bounce:0.18" level="project" />
@@ -61,6 +62,7 @@
     <orderEntry type="library" name="Gradle: com.sun.istack:istack-commons-runtime:3.0.12" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: nz.ac.waikato.cms.weka:weka-dev:3.9.6" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest:2.2" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />

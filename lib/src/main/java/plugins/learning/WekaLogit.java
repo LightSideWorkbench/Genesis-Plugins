@@ -82,6 +82,17 @@ public class WekaLogit extends WekaCore{
 		String reg = settings.get("reg");
 		LibLINEAR linear = (LibLINEAR) classifier;
 		try {
+
+//			System.err.println("======= WekaLogit.java, LibLinear listOptions() =======");
+//			System.err.println(java.util.Arrays.asList(linear.listOptions().toString()));
+//			java.util.Enumeration libLinearOptions = linear.listOptions();
+//			System.out.println(java.util.Arrays.asList(libLinearOptions));
+//			while (libLinearOptions.hasMoreElements()) {
+//				System.err.println(libLinearOptions.nextElement().toString());
+//				System.err.println(libLinearOptions.nextElement());
+//				System.err.println(libLinearOptions.nextElement(). );
+//			}
+
 			linear.setOptions(new String[] {"convertNominalToBinary"});
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

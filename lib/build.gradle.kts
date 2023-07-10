@@ -14,7 +14,15 @@ plugins {
     idea
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_17
+//java.sourceCompatibility = JavaVersion.VERSION_17
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+version = "1.2.1"
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -39,7 +47,12 @@ dependencies {
     api("org.apache.commons:commons-math3:3.6.1")
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("com.google.guava:guava:31.0.1-jre")
-
+    implementation("nz.ac.waikato.cms.weka:weka-stable:3.8.6")
+    implementation("nz.ac.waikato.cms.weka:LibSVM:1.0.10")
+    implementation("tw.edu.ntu.csie:libsvm:3.31")
+    implementation(":LightSide")
+    implementation(":libsvm")
+//    implementation("libsvm")
     api("edu.stanford.nlp:stanford-parser:3.9.2")
     api("edu.stanford.nlp:stanford-corenlp:4.4.0")
     api("se.datadosen.riverlayout:riverlayout:1.1")
@@ -49,13 +62,14 @@ dependencies {
     api("org.simpleframework:simple:5.1.6")
     api("org.simpleframework:simple-transport:6.0.1")
 //    api(":LightSide")
-    implementation(":LightSide")
-    api("nz.ac.waikato.cms.weka:weka-dev:3.9.6")
+    api("nz.ac.waikato.cms.weka:weka-stable:3.8.6")
     api("nz.ac.waikato.cms.weka:bayesianLogisticRegression:1.0.5")
-    api("nz.ac.waikato.cms.weka:LibSVM:1.0.10")
+//    api("nz.ac.waikato.cms.weka:LibSVM:1.0.10")
     api("nz.ac.waikato.cms.weka:LibLINEAR:1.9.7")
     api("nz.ac.waikato.cms.weka:chiSquaredAttributeEval:1.0.4")
     api(":yeritools-min-1.0")
+    api(":libsvm")
+
     api("org.hamcrest:hamcrest-core:2.2")
     api("junit:junit:4.13.2")
     api("de.bwaldvogel:liblinear:2.21")
@@ -63,9 +77,9 @@ dependencies {
 
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
-    options.compilerArgs.addAll(arrayOf(
-        "--add-exports", "java.base/java.util=ALL-UNNAMED"
-    ))
+//    options.compilerArgs.addAll(arrayOf(
+//        "--add-exports", "java.base/java.util=ALL-UNNAMED"
+//    ))
 }
 
 //tasks.test {
