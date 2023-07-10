@@ -2,6 +2,7 @@
   <library name="Gradle: :yeritools-min-1.0:">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/libs/yeritools-min-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/yeritools-min-1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

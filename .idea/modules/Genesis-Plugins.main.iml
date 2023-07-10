@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":lib:test" external.linked.project.path="$MODULE_DIR$/../../../lib" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Genesis-Plugins" external.system.module.type="sourceSet" external.system.module.version="1.2.1" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="Genesis-Plugins:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="1.2.1" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../../lib/build/classes/java/test" />
+    <output url="file://$MODULE_DIR$/../../build/classes/java/main" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../lib/src/test">
-      <sourceFolder url="file://$MODULE_DIR$/../../../lib/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../lib/src/test/resources" type="java-test-resource" />
+    <content url="file://$MODULE_DIR$/../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Genesis-Plugins.lib.main" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-math3:3.6.1" level="project" />
     <orderEntry type="library" name="Gradle: edu.stanford.nlp:stanford-parser:3.9.2" level="project" />
     <orderEntry type="library" name="Gradle: edu.stanford.nlp:stanford-corenlp:4.4.0" level="project" />
@@ -104,5 +103,4 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.formdev:flatlaf:2.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.sun.activation:jakarta.activation:1.2.2" level="project" />
   </component>
-  <component name="TestModuleProperties" production-module="Genesis-Plugins.lib.main" />
 </module>

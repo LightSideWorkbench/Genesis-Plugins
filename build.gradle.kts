@@ -29,12 +29,12 @@ repositories {
     mavenCentral()
 
     flatDir {
-        dirs("../../LightSide")
+        dirs("../LightSide")
 //        dirs("/Users/rcmurray/git/LightSideWorkBench_2022-10-04/LightSide")
     }
 
     flatDir {
-        dirs("libs")
+        dirs("lib")
     }
 
     maven {
