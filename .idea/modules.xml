@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Genesis-Plugins.iml" filepath="$PROJECT_DIR$/.idea/modules/Genesis-Plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/Genesis-Plugins.lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Genesis-Plugins.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Genesis-Plugins.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Genesis-Plugins.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Genesis-Plugins.test.iml" />
     </modules>
