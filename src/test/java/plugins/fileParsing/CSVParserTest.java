@@ -51,9 +51,10 @@ public class CSVParserTest{
 	}
 	@Test
 	public void testParseDocumentSingleFile(){
-		files.add("../../Lightside/lib/testData/Gallup.csv");
+		files.add("../Lightside/testData/Gallup.csv");
 		try{
 			DocumentList parsed = parser.parseDocumentList(files, Charset.forName("UTF-8"));
+			System.out.println("CSVParserTest, testParseDocumentSingleFile: parsed.getSize() = " + parsed.getSize());
 			assertEquals(parsed.getSize(), 942);
 		} catch(IOException e){
 			fail();
