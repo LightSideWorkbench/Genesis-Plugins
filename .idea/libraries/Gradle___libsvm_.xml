@@ -2,7 +2,7 @@
   <library name="Gradle: :libsvm:">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/libs/libsvm.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/libsvm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../LightSide/lib/libsvm.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

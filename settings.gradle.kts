@@ -10,6 +10,8 @@
 
 rootProject.name = "Genesis-Plugins"
 include("lib")
+//include("..:LightSide:lib")
+//include("..:LightSide:lib:plugins")
 
 //plugins {
 //    java

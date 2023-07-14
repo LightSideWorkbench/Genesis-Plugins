@@ -32,7 +32,12 @@ repositories {
         dirs("../LightSide")
 //        dirs("/Users/rcmurray/git/LightSideWorkBench_2022-10-04/LightSide")
     }
-
+    flatDir {
+        dirs("../LightSide/lib")
+    }
+    flatDir {
+        dirs("../LightSide/lib/plugins")
+    }
     flatDir {
         dirs("lib")
     }
@@ -52,7 +57,8 @@ dependencies {
     implementation("tw.edu.ntu.csie:libsvm:3.31")
     implementation(":LightSide")
     implementation(":libsvm")
-//    implementation("libsvm")
+    implementation(files("../LightSide/LightSide.jar"))
+//    implementation(files("../LightSide/lib/plugins/genesis.jar"))
     api("edu.stanford.nlp:stanford-parser:3.9.2")
     api("edu.stanford.nlp:stanford-corenlp:4.4.0")
     api("se.datadosen.riverlayout:riverlayout:1.1")
@@ -61,18 +67,17 @@ dependencies {
     api("org.simpleframework:simple-http:6.0.1")
     api("org.simpleframework:simple:5.1.6")
     api("org.simpleframework:simple-transport:6.0.1")
-//    api(":LightSide")
     api("nz.ac.waikato.cms.weka:weka-stable:3.8.6")
     api("nz.ac.waikato.cms.weka:bayesianLogisticRegression:1.0.5")
-//    api("nz.ac.waikato.cms.weka:LibSVM:1.0.10")
     api("nz.ac.waikato.cms.weka:LibLINEAR:1.9.7")
     api("nz.ac.waikato.cms.weka:chiSquaredAttributeEval:1.0.4")
     api(":yeritools-min-1.0")
     api(":libsvm")
-
     api("org.hamcrest:hamcrest-core:2.2")
     api("junit:junit:4.13.2")
     api("de.bwaldvogel:liblinear:2.21")
+    testRuntimeOnly(files("$projectDir/../LightSide/LightSide.jar"))
+    testRuntimeOnly(files("../LightSide/LightSide.jar"))
 }
 
 tasks.withType<JavaCompile> {
