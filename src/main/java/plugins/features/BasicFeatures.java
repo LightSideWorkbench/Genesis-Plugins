@@ -232,7 +232,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 		if (selections.get(TAG_LINE_LENGTH))
 		{
 			Feature f = Feature.fetchFeature(getOutputName(), column + "NUM_TOKENS", Feature.Type.NUMERIC, this);
-			hits.add(new FeatureHit(f, new Double(tokens.size()), docID));
+			hits.add(new FeatureHit(f, Double.valueOf(tokens.size()), docID));
 		}
 		
 		
@@ -468,7 +468,7 @@ public class BasicFeatures extends ParallelFeaturePlugin
 				Feature f = hit.getFeature();
 				Feature newF = Feature.fetchFeature(f.getExtractorPrefix(), f.getFeatureName(), Feature.Type.NUMERIC, this);
 
-				FeatureHit newHit = new LocalFeatureHit(newF, new Double(hit.getHits().size()), docID, hit.getHits());
+				FeatureHit newHit = new LocalFeatureHit(newF, Double.valueOf(hit.getHits().size()), docID, hit.getHits());
 				result.add(newHit);
 			}
 
